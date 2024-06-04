@@ -1,0 +1,93 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ebook {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.ebook img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 16px auto;
+  border-radius: 4px;
+}
+
+.ebook h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.ebook h3 {
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ebook ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ebook li {
+  margin: 5px 0;
+}
+
+.ebook a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.ebook a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .ebook {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ebook img {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 16px;
+  }
+
+  .ebook .details {
+    flex: 2;
+  }
+
+  .ebook h2,
+  .ebook h3 {
+    text-align: left;
+  }
+}
